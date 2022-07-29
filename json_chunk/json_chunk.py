@@ -7,6 +7,7 @@ import pathlib
 # Tk().withdraw()
 uploaded_file = askopenfilename()
 read_buffer_size = 1024
+# we want each chunk to be 1mb big
 chunk_size = 1024 * 1000
 
 # request = int(input("Please enter your preferred chunk size: "))
@@ -25,11 +26,6 @@ def validate():
             print("Invalid file type")
             # return False
             exit()
-
-
-read_buffer_size = 1024
-# we want each chunk to be 1mb big
-chunk_size = 1024 * 1000
 
 
 # this method chunk's the file
